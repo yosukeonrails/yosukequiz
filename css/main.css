@@ -1,0 +1,113 @@
+.app-box {
+
+    border:1px solid black;
+    width: 600px;
+    height: 600px;
+    background-color: #ccccff;
+    margin-right:auto ;
+    margin-left: auto;
+    border-radius: 4px;
+
+
+}
+
+
+.welcome button{
+	width:340px;
+   height: 100px;
+    border-radius: 4px;
+     margin-right:auto ;
+    margin-left: auto;
+   	margin-top: 50px;
+  	margin-left: 125px;
+  	margin-bottom:10px;
+}
+
+.welcome h1,h2 {
+	text-align: center;
+}
+
+.welcome h1 {
+  margin-top: 150px;
+}
+
+/*
+.welcome {
+	display: none;
+}*/
+
+.question-box h1 {
+	text-align: center;
+	margin-bottom: 50px;
+
+}
+
+
+.question-box li{
+	margin-left:10px;
+	list-style-type: none;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: inline-block;
+}
+
+.question-choice {
+
+    border:1px solid black;
+    width: 500px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 4px;
+    margin-bottom:10px;
+}
+
+
+.question-choice:hover {
+	background-color:white;
+}
+.not-selected{
+	background-color: blue;
+}
+.selected {
+	background-color: white;
+}
+
+.question-box{
+	display: none;
+}
+
+.submit-button{
+	border:1px solid black;
+    width: 500px;
+    height: 60px;
+    background-color: green;
+    border-radius: 4px;
+    margin-bottom:10px;
+    display: none;
+}
+
+.submit-button:hover{
+	background-color: white;
+
+}
+
+.answer-evaluator h1, h2 , p {
+
+	text-align: center;
+
+}
+
+.answer-evaluator button {
+
+	width:340px;
+   height: 100px;
+    border-radius: 4px;
+     margin-right:auto ;
+    margin-left: auto;
+   	margin-top: 50px;
+  	margin-left: 125px;
+  	margin-bottom:10px;
+  	display: none;
+
+}
+
