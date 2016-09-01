@@ -2,7 +2,7 @@
 
     border:1px solid black;
     width: 600px;
-    height: 600px;
+    height: 700px;
     background-color: #ccccff;
     margin-right:auto ;
     margin-left: auto;
@@ -98,6 +98,27 @@
 }
 
 .answer-evaluator button {
+
+	width:340px;
+   height: 100px;
+    border-radius: 4px;
+     margin-right:auto ;
+    margin-left: auto;
+   	margin-top: 50px;
+  	margin-left: 125px;
+  	margin-bottom:10px;
+  	display: none;
+
+}
+
+.result-box h1, h2 , p {
+
+	text-align: center;
+	
+
+}
+
+.result-box button {
 
 	width:340px;
    height: 100px;

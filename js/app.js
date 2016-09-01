@@ -195,6 +195,7 @@
 
        		$('.answer-evaluator button').show();
 
+
        			if(question_number==1){
        				evaluator(question_1.choice_D,question_1.choice_E,question_1.choice_A,question_1.choice_C,question_1.choice_B,question_1.explanation)
 				}
@@ -239,10 +240,12 @@
 
        })
 
+       var points;
+
 
        function evaluator( correct, good, okay, notgood , wrong , explanation){
 
-       	var points;
+      
 
 
        		if(selected==correct){	
@@ -276,12 +279,22 @@
           $('.answer-evaluator p').text(explanation)
 
 
-          $('.answer-evaluator h3').text('You have now:'+ points +' points!')
+          $('.answer-evaluator h3').text('You got: '+ points +' points!')
+
+          pointArray.push(points)
 
        }
 
+				var pointArray=[]
+        
+		
 
        $('.answer-evaluator button').click(function(){
+		     
+			var totalPoints = pointArray.reduce(function(a, b) { return a + b; }, 0);
+
+			console.log(totalPoints)
+    
 
        	$('.answer-evaluator').hide();
 
@@ -329,15 +342,28 @@
     									$('.question-choice').removeClass('selected')
     									current_question(question_10.question,question_10.choice_A,question_10.choice_B,question_10.choice_C,question_10.choice_D,question_10.choice_E)
     								}
+    								else if (question_number == 11) {
 
 
+									       	$('.question-box').hide();
 
+									    	$('.result-box').show();
+
+									    	$('.result-box button').show();
+
+									    	$('.result-box h1').text('Congratulations! You finished this weird quiz!! ');
+									    	$('.result-box h2').text('Your total score was :'+ totalPoints );
+									    	
+    								}
+
+    								$('.result-box button').click(function(){
+    									location.reload();
+    								})
+
+
+    										   $('.point-counter h2').text('Total Points: '+ totalPoints)
     
        })
-
-
-
-
 
 	
       })
